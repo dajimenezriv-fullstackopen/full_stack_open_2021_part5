@@ -34,6 +34,7 @@ export default function LoginForm({ setUser, setMessage, setError }) {
           type="text"
           value={username}
           name="Username"
+          id="username"
           onChange={({ target }) => setUsername(target.value)}
         />
       </div>
@@ -43,10 +44,11 @@ export default function LoginForm({ setUser, setMessage, setError }) {
           type="password"
           value={password}
           name="Password"
+          id="password"
           onChange={({ target }) => setPassword(target.value)}
         />
       </div>
-      <button type="submit">login</button>
+      <button type="submit" id="login_button">login</button>
     </form>
   );
 }
